@@ -5,3 +5,20 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+require "json"
+
+Recipe.delete_all
+
+recipes_seed_file = Rails.root.join "db/seeds/recipes-en.json"
+
+recipes_json = JSON.parse(File.read(recipes_seed_file))
+
+recipes_json.each do |recipe_data|
+  ingredients = recipe_data.delete("ingredients").map do |i|
+    {name: i}
+  end
+
+  recipe = Recipe.create(recipe_data)
+  recipe.ingredients.insert_all(ingredients)
+end
