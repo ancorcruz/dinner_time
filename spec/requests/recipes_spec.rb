@@ -27,5 +27,20 @@ RSpec.describe "/api/v1/recipes" do
         ]
       )
     end
+
+    context "given the query includes a list of ingredients" do
+      it "responds with the most relevant recipes filtered by the ingredients" do
+        get "/api/v1/recipes?ingredients[]=cornmeal&ingredients[]=vegetable%20oil"
+
+        json_response = JSON.parse(response.body)
+
+        expect(json_response).to eq(
+          [
+            recipe_2.as_json(include: :ingredients),
+            recipe_1.as_json(include: :ingredients)
+          ]
+        )
+      end
+    end
   end
 end
