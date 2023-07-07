@@ -97,6 +97,242 @@ GET /api/v1/recipes?ingredients[]=eggs&ingredients[]=cream
 <details>
 <summary>Example Response:</summary>
 
-TO BE DEFINED
+```
+[
+    {
+        "id": 7123,
+        "title": "Baileys \u00e0 la French Toast",
+        "cook_time": 6,
+        "prep_time": 5,
+        "ratings": 4,
+        "cuisine": "",
+        "category": "Everyday Cooking",
+        "author": "Baileys",
+        "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F5983211.jpg",
+        "created_at": "2023-07-06T19:39:45.023Z",
+        "updated_at": "2023-07-06T19:39:45.023Z",
+        "ingredients": [
+            {
+                "id": 68463,
+                "recipe_id": 7123,
+                "name": "\u00bd ounce Baileys\u00ae Original Irish Cream",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68464,
+                "recipe_id": 7123,
+                "name": "4 ounces whipping cream",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68465,
+                "recipe_id": 7123,
+                "name": "2 tablespoons confectioners' sugar",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68466,
+                "recipe_id": 7123,
+                "name": "2 \u00bd ounces Baileys\u00ae Original Irish Cream",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68467,
+                "recipe_id": 7123,
+                "name": "2 \u00bd ounces whipping cream",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68468,
+                "recipe_id": 7123,
+                "name": "\u00bd teaspoon vanilla extract",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68469,
+                "recipe_id": 7123,
+                "name": "2 eggs",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68470,
+                "recipe_id": 7123,
+                "name": "2 thick slices bakery-style bread",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68471,
+                "recipe_id": 7123,
+                "name": "1 tablespoon butter",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            },
+            {
+                "id": 68472,
+                "recipe_id": 7123,
+                "name": "3 \u00bd tablespoons dark chocolate chips, melted",
+                "created_at": "2023-07-06T19:39:45.026Z",
+                "updated_at": "2023-07-06T19:39:45.026Z"
+            }
+        ]
+    },
+    {
+        "id": 2283,
+        "title": "Cream Tart Number Cake",
+        "cook_time": 10,
+        "prep_time": 30,
+        "ratings": 5,
+        "cuisine": "",
+        "category": "Dessert Tarts",
+        "author": "Sandra Garth",
+        "image": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F6434357.jpg",
+        "created_at": "2023-07-06T19:39:19.815Z",
+        "updated_at": "2023-07-06T19:39:19.815Z",
+        "ingredients": [
+            {
+                "id": 22238,
+                "recipe_id": 2283,
+                "name": "2 matching letter or number stencils",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22239,
+                "recipe_id": 2283,
+                "name": "\u00be cup softened butter",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22240,
+                "recipe_id": 2283,
+                "name": "\u00be cup white sugar",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22241,
+                "recipe_id": 2283,
+                "name": "2 eggs, slightly beaten",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22242,
+                "recipe_id": 2283,
+                "name": "2 teaspoons vanilla extract",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22243,
+                "recipe_id": 2283,
+                "name": "2 teaspoons cream cheese flavoring",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22244,
+                "recipe_id": 2283,
+                "name": "2 \u00bc cups all-purpose flour",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22245,
+                "recipe_id": 2283,
+                "name": "2 \u00bc teaspoons baking powder",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22246,
+                "recipe_id": 2283,
+                "name": "\u00bd teaspoon salt",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22247,
+                "recipe_id": 2283,
+                "name": "\u00bd teaspoon ground cinnamon",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22248,
+                "recipe_id": 2283,
+                "name": "1 (8 ounce) package cream cheese",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22249,
+                "recipe_id": 2283,
+                "name": "1 cup sifted confectioners' sugar",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22250,
+                "recipe_id": 2283,
+                "name": "1 cup heavy cream, chilled",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22251,
+                "recipe_id": 2283,
+                "name": "1 1/2 teaspoons cream cheese flavoring",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22252,
+                "recipe_id": 2283,
+                "name": "1 teaspoon vanilla extract",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22253,
+                "recipe_id": 2283,
+                "name": "12 blackberries, or to taste",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22254,
+                "recipe_id": 2283,
+                "name": "12 strawberries, or to taste",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22255,
+                "recipe_id": 2283,
+                "name": "12 yogurt-covered pretzels, or to taste",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            },
+            {
+                "id": 22256,
+                "recipe_id": 2283,
+                "name": "small faux flowers",
+                "created_at": "2023-07-06T19:39:19.818Z",
+                "updated_at": "2023-07-06T19:39:19.818Z"
+            }
+        ]
+    }
+]
+```
 
 </details>
