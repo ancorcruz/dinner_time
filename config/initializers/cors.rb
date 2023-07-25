@@ -7,7 +7,11 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "http://localhost:3001"
+    if Rails.env.production?
+      origins "https://ac-dinner-time.fly.dev"
+    else
+      origins "http://localhost:3001"
+    end
 
     resource "*",
       headers: :any,
