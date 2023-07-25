@@ -15,13 +15,13 @@ recipes_seed_file = Rails.root.join "db/seeds/recipes-en.json"
 
 recipes_json = JSON.parse(File.read(recipes_seed_file))
 
-Recipe.transaction do
-  recipes_json.each do |recipe_data|
-    ingredients = recipe_data.delete("ingredients").map do |i|
-      {name: i}
-    end
+recipes_json.each do |recipe_data|
+  recipe = Recipe.create(recipe_data.except("ingredients"))
 
-    recipe = Recipe.create(recipe_data)
-    recipe.ingredients.insert_all(ingredients)
+  ingredients = recipe_data["ingredients"].map do |i|
+    { recipe_id: recipe.id, name: i }
   end
+
+  Ingredient.insert_all(ingredients)
+  GC.start
 end
